@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinchariya 1.1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="importmap">
+{
+  "imports": {
+    "vite": "https://aistudiocdn.com/vite@^7.2.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-ChPeeEw4.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BVoBbiVE.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Dinchariya 1.1</h1>
+      <div class="stats">
+        <div id="points-chip" class="chip">
+          <span id="points-icon">🏆</span>
+          <span id="points-value">0 / 0</span>
+        </div>
+        <div id="streak-chip" class="chip">
+          <span id="streak-icon">🔥</span>
+          <span id="streak-value">0</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="progress-container">
+        <svg id="progress-ring" width="120" height="120" viewBox="0 0 120 120">
+          <circle class="progress-ring__background" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+          <circle id="progress-circle" class="progress-ring__circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+        </svg>
+        <span id="progress-text">0%</span>
+      </div>
+
+      <div id="sheet-loader">
+        <p>Publish your sheet to the web (as CSV) or share it ("anyone with link"). Then paste the URL here.</p>
+        <div class="input-group">
+          <input type="url" id="sheet-url-input" placeholder="https://docs.google.com/spreadsheets/d/...">
+          <button id="load-sheet-btn" class="button-primary">Load Tasks</button>
+        </div>
+        <p id="loader-status"></p>
+      </div>
+
+      <div id="task-list"></div>
+      <div id="all-done" class="hidden">
+        <h2>All done for today! ✨</h2>
+        <p>Come back tomorrow for a new set of tasks.</p>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
