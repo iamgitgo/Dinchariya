@@ -2,6 +2,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Use relative paths for assets, which works well for GitHub Pages.
-  base: './',
+  // This should be the name of your GitHub repository.
+  base: '/Dinchariya/',
 })
